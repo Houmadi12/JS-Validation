@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="image/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generer SQR-Code</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="script/VerifieConnexion.js"></script>
+</head>
+
+<body id="bg-page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top box-chadow bg-white">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="image/logov0.png" alt="Bootstrap" width="150" height="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5 me-4" id="link" aria-current="page">Lecture-QR</a>
+          </li>
+        </ul>
+        <form class="d-flex align-items-center">
+          <a href="index.html" id="logout-button" class="btn btn-danger m-3" type="submit">Déconnexion</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin Navbar -->
+  <div class="container-flud d-flex flex-column flex-md-row justify-content-center gap-5 align-items-center my-5 pt-5">
+    <div class="col-8 col-md-3 pt-5 pt-md-4">
+      <div class="card">
+        <div id="qr-code" class="d-flex justify-content-center p-4"></div>
+        <div class="card-body bg-card">
+          <div class="d-flex flex-column ">
+            <h5 class="card-title font-Poppins">Entrer un text ou un lien</h5>
+            <input type="email" class="form-control mb-3" id="qr_text" placeholder="https://exemple.com">
+            <div id="result"></div>
+            <button type="button" class="btn btn-primary" id="btn">Genere SQR-Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 col-md-5 pt-0 pt-md-4">
+      <div class="container h-valeur p-0 p-md-1 mt-3 mt-md-0">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">#</th>
+              <th scope="col" class="text-center">QRCode</th>
+              <th scope="col" class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--  Footer -->
+  <footer class="footer py-1 bg-secondary-subtle">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start">
+          <div class="logo">
+            <img src="image/imgLogo.png" alt="" width="100">
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+          <a href="#" class="text-decoration-none text-dark">Condition générales d'utilisation</a>
+          <a href="#" class="text-decoration-none text-dark">Politique de confidentialité</a>
+          <a href="#" class="text-decoration-none text-dark">Contactez nous</a>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+          <small class="text-secondary"> &copy; 2024 - Sqr-generator. Tous droits réservés.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fin Footer -->
+  <script src="script/qrcode.min.js" type="text/javaScript"></script>
+  <script src="script/generateurSql.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

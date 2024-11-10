@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.box-chadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.bg-page {
+    background: #d7ecbc ;
+}
+
+.bg-card {
+    background: #f5f7f2 ;
+}
+
+#bg-page {
+    background-image: linear-gradient(to right top, #0800b7, #170abb, #2013bf, #281ac2, #2f21c6, #2041da, #0d5bec, #0073fc, #009eff, #00c2ff, #00e0ff, #5ffbf1);
+}
+
+.font-Poppins {
+    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#qr-code {
+    margin: 20px;
+    height: 250px;
+}
+
+/* Page d'acceuil */
+#section1{
+   background: #ecedee;
+}
+
+.bg-bloc{
+    background: rgb(51, 49, 90);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(12, 145, 172) 100%);
+}
+
+
+@media screen and (min-width:768px) {
+    .txt-fs-t{
+        font-size: 24px !important;
+    }
+
+    .txt-fs{
+        font-size: 15px !important;
+    }
+}
+@media screen and (min-width:320px) {
+    .txt-fs-t{
+        font-size: 24px !important;
+    }
+
+    .txt-fs{
+        font-size: 15px !important;
+    }
+}
+
+/* Section 2 */
+#section2 {
+    background: #e2eef4;
+}
+
+/* Page contact */
+#section-contact {
+    height: 75vh !important;
+}
+
+/* Page gestion de code QR */
+.h-valeur{
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 70vh;
+    background: #fff;
+}
+
+#link,#link1{
+    cursor: pointer;
+}
+#link:active,
+#link1:active{
+    margin-top: 1px;
+}
+
+/* Page lecture QRCode */
+#section-lect{
+    min-height: 80vh;
+}
+
+/* .box {
+    min-height: 65vh;
+} */
